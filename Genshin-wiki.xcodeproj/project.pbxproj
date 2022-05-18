@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		687004902834C0B7002E9A87 /* GenshinWiki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6870048F2834C0B7002E9A87 /* GenshinWiki.swift */; };
-		687004922834C0B7002E9A87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687004912834C0B7002E9A87 /* ContentView.swift */; };
+		687004922834C0B7002E9A87 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687004912834C0B7002E9A87 /* HomeView.swift */; };
 		687004942834C0B9002E9A87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687004932834C0B9002E9A87 /* Assets.xcassets */; };
 		687004972834C0B9002E9A87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687004962834C0B9002E9A87 /* Preview Assets.xcassets */; };
+		687004A12834C1F4002E9A87 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687004A02834C1F4002E9A87 /* ContentModel.swift */; };
+		687004A42834C21F002E9A87 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687004A32834C21F002E9A87 /* Character.swift */; };
+		687004A62834C240002E9A87 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687004A52834C240002E9A87 /* Constants.swift */; };
+		687004A82834C28A002E9A87 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687004A72834C28A002E9A87 /* CharacterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6870048C2834C0B7002E9A87 /* Genshin-wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Genshin-wiki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6870048F2834C0B7002E9A87 /* GenshinWiki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenshinWiki.swift; sourceTree = "<group>"; };
-		687004912834C0B7002E9A87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		687004912834C0B7002E9A87 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		687004932834C0B9002E9A87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		687004962834C0B9002E9A87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		687004A02834C1F4002E9A87 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		687004A32834C21F002E9A87 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		687004A52834C240002E9A87 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		687004A72834C28A002E9A87 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		687004A92834C2D5002E9A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,8 @@
 		687004832834C0B7002E9A87 = {
 			isa = PBXGroup;
 			children = (
+				6870048F2834C0B7002E9A87 /* GenshinWiki.swift */,
+				687004A92834C2D5002E9A87 /* Info.plist */,
 				6870048E2834C0B7002E9A87 /* Genshin-wiki */,
 				6870048D2834C0B7002E9A87 /* Products */,
 			);
@@ -51,11 +62,10 @@
 		6870048E2834C0B7002E9A87 /* Genshin-wiki */ = {
 			isa = PBXGroup;
 			children = (
+				687004A22834C20D002E9A87 /* Models */,
 				6870049F2834C16E002E9A87 /* Helpers */,
 				6870049E2834C169002E9A87 /* Views */,
 				6870049D2834C162002E9A87 /* ViewModels */,
-				6870048F2834C0B7002E9A87 /* GenshinWiki.swift */,
-				687004912834C0B7002E9A87 /* ContentView.swift */,
 				687004932834C0B9002E9A87 /* Assets.xcassets */,
 				687004952834C0B9002E9A87 /* Preview Content */,
 			);
@@ -73,6 +83,7 @@
 		6870049D2834C162002E9A87 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				687004A02834C1F4002E9A87 /* ContentModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -80,6 +91,8 @@
 		6870049E2834C169002E9A87 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				687004912834C0B7002E9A87 /* HomeView.swift */,
+				687004A72834C28A002E9A87 /* CharacterDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,8 +100,17 @@
 		6870049F2834C16E002E9A87 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				687004A52834C240002E9A87 /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		687004A22834C20D002E9A87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				687004A32834C21F002E9A87 /* Character.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				687004922834C0B7002E9A87 /* ContentView.swift in Sources */,
+				687004A62834C240002E9A87 /* Constants.swift in Sources */,
+				687004922834C0B7002E9A87 /* HomeView.swift in Sources */,
 				687004902834C0B7002E9A87 /* GenshinWiki.swift in Sources */,
+				687004A82834C28A002E9A87 /* CharacterDetailView.swift in Sources */,
+				687004A12834C1F4002E9A87 /* ContentModel.swift in Sources */,
+				687004A42834C21F002E9A87 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +320,7 @@
 				DEVELOPMENT_TEAM = 9BPWX42RHU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Genshin-wiki/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,6 +350,7 @@
 				DEVELOPMENT_TEAM = 9BPWX42RHU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Genshin-wiki/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
