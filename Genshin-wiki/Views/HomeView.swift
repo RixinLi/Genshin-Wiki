@@ -14,8 +14,6 @@ struct HomeView: View {
         
         NavigationView{
             
-            
-            
             VStack{
                 
                 CharacterDetailView(role: "albedo")
