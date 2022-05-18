@@ -16,7 +16,7 @@ struct HomeView: View {
             
             VStack{
                 
-                CharacterDetailView(role: "albedo")
+                CharacterDetailView(role: "hu-tao")
                 
                 
             }.navigationBarHidden(true)

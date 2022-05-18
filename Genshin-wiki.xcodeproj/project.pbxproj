@@ -27,7 +27,6 @@
 		687004A32834C21F002E9A87 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		687004A52834C240002E9A87 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		687004A72834C28A002E9A87 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
-		687004A92834C2D5002E9A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +44,6 @@
 			isa = PBXGroup;
 			children = (
 				6870048F2834C0B7002E9A87 /* GenshinWiki.swift */,
-				687004A92834C2D5002E9A87 /* Info.plist */,
 				6870048E2834C0B7002E9A87 /* Genshin-wiki */,
 				6870048D2834C0B7002E9A87 /* Products */,
 			);
