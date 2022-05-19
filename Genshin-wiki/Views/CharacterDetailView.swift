@@ -12,11 +12,12 @@ struct CharacterDetailView: View {
     var role: String
     
     var body: some View {
-        VStack(alignment:.center){
-            Image(role+"-card").resizable().scaledToFit()
-            Text(model.roles[role]?.name ?? "").bold().font(.title)
-        }
-        
+        ScrollView{
+            
+            LazyVStack(alignment:.leading){
+                Image("\(role)-card").resizable().scaledToFit()
+            }
+        }.navigationTitle(model.roles[role]?.name ?? "").font(.largeTitle)
     }
 }
 
