@@ -19,7 +19,9 @@ struct CharacterRow: View {
             HStack(spacing: 30){
                 
                 VStack(spacing:10){
-                    Image("\(role)-icon").resizable().scaledToFit().frame(width: 100, height: 100, alignment:.leading)
+                    if role != "" {
+                        Image("\(role)-icon").resizable().scaledToFit().frame(width: 100, height: 100, alignment:.leading)
+                    }
                     Text(model.roles[role]?.name ?? "").font(.subheadline)
                 }.padding(.leading).foregroundColor(.black)
                 

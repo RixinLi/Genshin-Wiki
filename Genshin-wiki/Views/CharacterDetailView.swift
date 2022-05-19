@@ -15,7 +15,9 @@ struct CharacterDetailView: View {
         ScrollView{
             
             LazyVStack(alignment:.leading){
-                Image("\(role)-card").resizable().scaledToFit()
+                if role != "" {
+                    Image("\(role)-card").resizable().scaledToFit()
+                }
                 let url = URL(string: Constants.RoleDemonstration[role] ?? "")
                 if url != nil {
                     HStack{
