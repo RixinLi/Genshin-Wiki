@@ -16,8 +16,17 @@ struct CharacterDetailView: View {
             
             LazyVStack(alignment:.leading){
                 Image("\(role)-card").resizable().scaledToFit()
-            }
-        }.navigationTitle(model.roles[role]?.name ?? "").font(.largeTitle)
+                let url = URL(string: Constants.RoleDemonstration[role] ?? "")
+                if url != nil {
+                    HStack{
+                        Text("\(role) role demonstartion : ").bold().lineLimit(1)
+                        Spacer()
+                        Link("bilibili", destination: url!)
+                    }
+                }
+            }.padding(.horizontal)
+            
+        }.navigationTitle(model.roles[role]?.name ?? "")
     }
 }
 

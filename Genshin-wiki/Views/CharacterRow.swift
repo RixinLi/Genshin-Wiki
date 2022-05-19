@@ -21,14 +21,17 @@ struct CharacterRow: View {
                 VStack(spacing:10){
                     Image("\(role)-icon").resizable().scaledToFit().frame(width: 100, height: 100, alignment:.leading)
                     Text(model.roles[role]?.name ?? "").font(.subheadline)
-                }.padding(.leading)
+                }.padding(.leading).foregroundColor(.black)
                 
-                VStack(alignment:.leading, spacing: 10){
-                    Text("Vision : "+(model.roles[role]?.vision ?? ""))
-                        .font(.headline)
-                    
-                    Text("Nation : "+(model.roles[role]?.nation ?? "")).font(.headline)
-                }.padding()
+                ZStack{
+                    Image("\(model.roles[role]?.nation ?? "")-icon").resizable().foregroundColor(Color.pink).scaledToFit()
+                    VStack(alignment:.leading, spacing: 10){
+                        Text("Vision : "+(model.roles[role]?.vision ?? ""))
+                            .font(.headline)
+                        
+                        Text("Nation : "+(model.roles[role]?.nation ?? "")).font(.headline)
+                    }.padding().foregroundColor(.black)
+                }
                 
             }.padding(.vertical)
         }.padding()
