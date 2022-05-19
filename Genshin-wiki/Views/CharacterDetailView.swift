@@ -23,8 +23,8 @@ struct CharacterDetailView: View {
                     HStack{
                         Text("\(role) role demonstartion : ").bold().lineLimit(1)
                         Spacer()
-                        Link("bilibili", destination: url!)
-                    }
+                        Link("Open bilibili", destination: url!)
+                    }.padding()
                 }
             }.padding(.horizontal)
             
