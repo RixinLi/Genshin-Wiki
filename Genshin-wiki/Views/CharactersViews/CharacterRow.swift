@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct CharacterRow: View {
+    
     @EnvironmentObject var model:ContentModel
+    
     var role:String
     
     var body: some View {
@@ -16,24 +18,18 @@ struct CharacterRow: View {
             
             Rectangle().foregroundColor(.white).cornerRadius(10)
                 .shadow(radius: 5)
-            HStack(spacing: 30){
+            
+            
+            HStack(alignment:.center){
                 
                 VStack(spacing:10){
                     if role != "" {
                         Image("\(role)-icon").resizable().scaledToFit().frame(width: 100, height: 100, alignment:.leading)
                     }
-                    Text(model.roles[role]?.name ?? "").font(.subheadline)
+                    Text(model.roles[role]?.name ?? "").font(Font.custom("Times New Roman", size: 16))
                 }.padding(.leading).foregroundColor(.black)
-                
-                ZStack{
-                    Image("\(model.roles[role]?.nation ?? "")-icon").resizable().foregroundColor(Color.pink).scaledToFit()
-                    VStack(alignment:.leading, spacing: 10){
-                        Text("Vision : "+(model.roles[role]?.vision ?? ""))
-                            .font(.headline)
-                        
-                        Text("Nation : "+(model.roles[role]?.nation ?? "")).font(.headline)
-                    }.padding().foregroundColor(.black)
-                }
+                Image("\(model.roles[role]?.vision ?? "")-element").resizable().scaledToFit()
+                Image("\(model.roles[role]?.nation ?? "")-icon").resizable().foregroundColor(Color.pink).scaledToFit()
                 
             }.padding(.vertical)
         }.padding()

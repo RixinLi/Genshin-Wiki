@@ -10,6 +10,7 @@ import Foundation
 class ContentModel: ObservableObject{
     
     @Published var roles: [String : Character] = [:]
+    @Published var enter: Bool = false
     
     init(){
         getRemoteData()

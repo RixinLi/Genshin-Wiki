@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		687004902834C0B7002E9A87 /* GenshinWiki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6870048F2834C0B7002E9A87 /* GenshinWiki.swift */; };
-		687004922834C0B7002E9A87 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687004912834C0B7002E9A87 /* HomeView.swift */; };
+		687004922834C0B7002E9A87 /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687004912834C0B7002E9A87 /* CharactersListView.swift */; };
 		687004942834C0B9002E9A87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687004932834C0B9002E9A87 /* Assets.xcassets */; };
 		687004972834C0B9002E9A87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687004962834C0B9002E9A87 /* Preview Assets.xcassets */; };
 		687004A12834C1F4002E9A87 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687004A02834C1F4002E9A87 /* ContentModel.swift */; };
@@ -16,12 +16,15 @@
 		687004A62834C240002E9A87 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687004A52834C240002E9A87 /* Constants.swift */; };
 		687004A82834C28A002E9A87 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687004A72834C28A002E9A87 /* CharacterDetailView.swift */; };
 		68D94D3A2835B47500F57041 /* CharacterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D94D392835B47500F57041 /* CharacterRow.swift */; };
+		68D94D3E283714EC00F57041 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D94D3D283714EC00F57041 /* ButtonView.swift */; };
+		68D94D402837174D00F57041 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D94D3F2837174D00F57041 /* LaunchView.swift */; };
+		68D94D4428371E2600F57041 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D94D4328371E2600F57041 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6870048C2834C0B7002E9A87 /* Genshin-wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Genshin-wiki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6870048F2834C0B7002E9A87 /* GenshinWiki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenshinWiki.swift; sourceTree = "<group>"; };
-		687004912834C0B7002E9A87 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		687004912834C0B7002E9A87 /* CharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
 		687004932834C0B9002E9A87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		687004962834C0B9002E9A87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		687004A02834C1F4002E9A87 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
@@ -29,6 +32,9 @@
 		687004A52834C240002E9A87 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		687004A72834C28A002E9A87 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		68D94D392835B47500F57041 /* CharacterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRow.swift; sourceTree = "<group>"; };
+		68D94D3D283714EC00F57041 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		68D94D3F2837174D00F57041 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		68D94D4328371E2600F57041 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +97,10 @@
 		6870049E2834C169002E9A87 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				687004912834C0B7002E9A87 /* HomeView.swift */,
-				687004A72834C28A002E9A87 /* CharacterDetailView.swift */,
-				68D94D392835B47500F57041 /* CharacterRow.swift */,
+				68D94D4328371E2600F57041 /* HomeView.swift */,
+				68D94D4628371FB800F57041 /* MainViews */,
+				68D94D4528371F9B00F57041 /* CharactersViews */,
+				68D94D4728371FDC00F57041 /* ReuseableViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +119,32 @@
 				687004A32834C21F002E9A87 /* Character.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		68D94D4528371F9B00F57041 /* CharactersViews */ = {
+			isa = PBXGroup;
+			children = (
+				687004A72834C28A002E9A87 /* CharacterDetailView.swift */,
+				68D94D392835B47500F57041 /* CharacterRow.swift */,
+			);
+			path = CharactersViews;
+			sourceTree = "<group>";
+		};
+		68D94D4628371FB800F57041 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				68D94D3F2837174D00F57041 /* LaunchView.swift */,
+				687004912834C0B7002E9A87 /* CharactersListView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		68D94D4728371FDC00F57041 /* ReuseableViews */ = {
+			isa = PBXGroup;
+			children = (
+				68D94D3D283714EC00F57041 /* ButtonView.swift */,
+			);
+			path = ReuseableViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,12 +218,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				687004A62834C240002E9A87 /* Constants.swift in Sources */,
-				687004922834C0B7002E9A87 /* HomeView.swift in Sources */,
+				687004922834C0B7002E9A87 /* CharactersListView.swift in Sources */,
 				687004902834C0B7002E9A87 /* GenshinWiki.swift in Sources */,
+				68D94D4428371E2600F57041 /* HomeView.swift in Sources */,
 				687004A82834C28A002E9A87 /* CharacterDetailView.swift in Sources */,
 				687004A12834C1F4002E9A87 /* ContentModel.swift in Sources */,
 				68D94D3A2835B47500F57041 /* CharacterRow.swift in Sources */,
 				687004A42834C21F002E9A87 /* Character.swift in Sources */,
+				68D94D402837174D00F57041 /* LaunchView.swift in Sources */,
+				68D94D3E283714EC00F57041 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

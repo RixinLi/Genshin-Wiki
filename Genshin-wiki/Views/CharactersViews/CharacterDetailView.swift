@@ -15,9 +15,12 @@ struct CharacterDetailView: View {
         ScrollView{
             
             LazyVStack(alignment:.leading){
+                
                 if role != "" {
                     Image("\(role)-card").resizable().scaledToFit()
                 }
+                
+                // Role Demonstrations on bilibili
                 let url = URL(string: Constants.RoleDemonstration[role] ?? "")
                 if url != nil {
                     HStack{
@@ -26,6 +29,9 @@ struct CharacterDetailView: View {
                         Link("Open bilibili", destination: url!)
                     }.padding()
                 }
+                
+                
+                
             }.padding(.horizontal)
             
         }.navigationTitle(model.roles[role]?.name ?? "")
